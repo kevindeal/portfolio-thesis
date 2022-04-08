@@ -23,13 +23,11 @@
 /*	01) KURA BASE
 /*---------------------------------------------------*/
 @font-face {
-	font-family: "Founders Grotesk";
-	src: url('/Users/kevindeal/Documents/blog:kevindeal/portfolios/Thesis/html/fonts /founders-grotesk-web-regular.eot');
-	src: url('fonts /founders-grotesk-web-regular.eot') format('embedded-opentype'),
-			 url('fonts /founders-grotesk-web-regular.woff') format('woff'),
-			 url('fonts /founders-grotesk-web-regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Founders Grotesk Reg';
+  src: url('../fonts/founders-grotesk-web-medium.woff2') format('woff2'), url('../fonts/founders-grotesk-web-regular.woff') format('woff'), url('../fonts/founders-grotesk-web-regular.eot') format('eot');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*---------------------------------------------------*/
@@ -42,7 +40,7 @@ html {
 	margin: 0px
 }
 body{
-	font-family: "Founders Grotesk";
+	font-family: 'Founders Grotesk Reg', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	font-size: 16px;
 	line-height: 28px;
 	letter-spacing: 0.2px;
@@ -112,7 +110,7 @@ body::-webkit-scrollbar-thumb {
 h1, h2, h3, h4, h5, h6{
 	font-weight:500;
 	line-height: 1.2;
-	font-family: "Founders Grotesk";
+	font-family: 'Founders Grotesk Reg';
 	color: #42514d;
 }
 
@@ -176,7 +174,7 @@ h6 { font-size: 16px; }
     width: 50%;
     height: 100%;
     z-index: -1;
-    background-color: #000;
+    background-color: #13241f;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -371,7 +369,7 @@ body.opened .kura_tm_topbar{
 }
 .kura_tm_topbar .list ul li a{
 	text-decoration: none;
-	color: #000;
+	color: #42504c;
 	font-family: "Founders Grotesk";
 	
 	-webkit-transition: all .3s ease;
@@ -417,7 +415,7 @@ body.opened .kura_tm_topbar{
 	height: auto;
 	float: left;
 	clear: both;
-	background-color: #fff;
+	background-color: #fffdf5;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	padding: 15px 30px 15px 40px;
 }
@@ -442,7 +440,7 @@ body.opened .kura_tm_topbar{
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #fff;
+	background-color: #fffdf5;
 	display: none;
 }
 .kura_tm_mobile_menu .dropdown .dropdown_inner{
@@ -463,7 +461,7 @@ body.opened .kura_tm_topbar{
 }
 .kura_tm_mobile_menu .dropdown .dropdown_inner ul li a{
 	text-decoration: none;
-	color: #000;
+	color: #13241f;
 	display: inline-block;
 	padding: 0px 0px;
 	font-family: "Founders Grotesk";
@@ -514,14 +512,14 @@ body.opened .kura_tm_hero .content .left{
 	display: inline-block;
 	margin-bottom: 16px;
 	color: #ff4522;
-	font-family: "Founders Grotesk";
+	font-family: 'Founders Grotesk Reg';
 	font-weight: 500;
 }
 .kura_tm_hero .job{
-	font-size: 45px;
-	font-weight: 800;
-	line-height: 1.4;
-	text-transform: uppercase;
+	font-size: 86px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: 0.01rem;
 	margin-bottom: 25px;
 }
 .kura_tm_hero .services{
@@ -542,7 +540,7 @@ body.opened .kura_tm_hero .content .left{
 }
 .kura_tm_hero .services ul li a{
 	text-decoration: none;
-	color: #000;
+	color: #13241f;
 	font-size: 17px;
 	display: inline-block;
 	padding: 8px 0px;
@@ -854,7 +852,7 @@ body.opened .kura_tm_hero .down{
 }
 .kura_tm_hero .down a{
 	text-decoration: none;
-	color: #000;
+	color: #13241f;
 	
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -1009,7 +1007,7 @@ body.opened .kura_tm_hero .down{
 	height: 50px;
 	z-index: 2;
 	transform: rotate(-50deg);
-	color: #000;
+	color: #13241f;
 	opacity: 0;
 	visibility: hidden;
 	
@@ -1033,93 +1031,38 @@ body.opened .kura_tm_hero .down{
 }
 .kura_tm_swiper_progress{
 	position: absolute;
-	top: 0;
+	display: flex;
+	top: -0.5rem;
 	z-index: 999;
 	width: 100%;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	clear: both;
+	box-sizing: border-box;
+	flex: 0 1 auto;
+	flex-wrap: wrap;
 }
 .kura_tm_swiper_progress .my_pagination_in{
-	float: left;
-	position: relative;
+	font-size: 3.75rem;
+	color: #839691;
 }
 .kura_tm_swiper_progress span{
-	display: block;
-	float: left;
-	font-size: 16px;
-	letter-spacing: 0;
-	color: #000;
-	height: 22px;
-	line-height: 22px;
-}
-.kura_tm_swiper_progress .pagination_progress{
-	width: 100px;
-	margin: 0 20px;
-	position: relative;
-}
-.kura_tm_swiper_progress .pagination_progress .all{
-	height: 1px;
-	width: 100%;
-	position: absolute;
-	z-index: 5;
-	top: 0;
-	top: 50%;
-	left: 0;
-	background-color: rgba(0,0,0,.2);
-}
-.kura_tm_swiper_progress .pagination_progress .all span{
-	height: 1px;
-	width: 100%;
-	background-color: rgba(0,0,0,.5);
-	position: absolute;
-	z-index: 5;
-	top: 0;
-	left: 0;
-	transform-origin: left top;
-	transform: scale(0);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.kura_tm_swiper_progress .my_navigation{
-	position: relative;
-	top: 6px;
-}
-.kura_tm_swiper_progress .my_navigation ul{
-	margin: 0px;
-	list-style-type: none;
-}
-.kura_tm_swiper_progress .my_navigation ul li{
-	margin: 0px 10px 0px 0px;
+	width: 4.25rem;
 	display: inline-block;
+	text-align: center;
 }
-.kura_tm_swiper_progress .my_navigation ul li:last-child{
-	margin-right: 0px;
+.kura_tm_swiper_progress .prev,
+.kura_tm_swiper_progress .next{
+	position: relative;
+	display: inline-block;
+	width: auto;
+	margin-top: -50%;
 }
-.kura_tm_swiper_progress .my_navigation ul li a{
-	text-decoration: none;
-	color: #000;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.kura_tm_swiper_progress .my_navigation ul li a:hover{
+.kura_tm_swiper_progress a{
 	color: #ff4522;
 }
-.kura_tm_swiper_progress .my_navigation ul li .svg{
+.kura_tm_swiper_progress .my_navigation .svg{
 	width: 27px;
 	height: 27px;
 }
-.kura_tm_swiper_progress .my_navigation ul li .my_prev .svg{
+.kura_tm_swiper_progress .my_prev .svg{
 	transform: rotate(180deg);
 }
 .kura_tm_portfolio .hidden_content{
@@ -1202,7 +1145,7 @@ body.opened .kura_tm_hero .down{
 .kura_tm_modalbox .main_details .detailbox .first{
     font-weight: 700;
 	display: block;
-	color: #000;
+	color: #13241f;
 	margin-bottom: 3px;
 }
 .kura_tm_modalbox .main_details .detailbox span a{
@@ -1224,7 +1167,7 @@ body.opened .kura_tm_hero .down{
 }
 .kura_tm_modalbox .main_details .detailbox .share li a{
 	text-decoration: none;
-	color: #000;
+	color: #13241f;
 }
 .kura_tm_modalbox .additional_images{
 	width: 100%;
@@ -1302,11 +1245,11 @@ body.opened .kura_tm_hero .down{
    	bottom: 0px;
    	left: 0px;
    	right: 0px;
-   	background-color: #000;
+   	background-color: #13241f;
    	z-index: 1;
 }
 .kura_tm_main_title.light h3{
-	color: #fff;
+	color: #fffdf5;
 }
 .kura_tm_skills .skills_inner{
 	width: 100%;
@@ -1327,7 +1270,7 @@ body.opened .kura_tm_hero .down{
 	margin-bottom: 44px;
 }
 .kura_tm_skills .text p{
-	color: #bbb;
+	color: #fffdf5;
 }
 .dodo_progress{
 	width: 100%;
@@ -1347,7 +1290,7 @@ body.opened .kura_tm_hero .down{
 	width:100%;
 	display:block;
 	text-align:left;
-	color: #fff;
+	color: #fffdf5;
 	font-family: "Founders Grotesk";
 }
 .progress_inner span.number{
@@ -1454,114 +1397,7 @@ body.opened .kura_tm_hero .down{
 	font-size: 18px;
 }
 .kura_tm_timeline .timeline_list ul li .list_inner:nth-child(2) span{
-	color: #000;
-}
-
-/*---------------------------------------------------*/
-/*	08) KURA PRICING
-/*---------------------------------------------------*/
-
-.kura_tm_pricing{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	padding: 80px 0px 150px 0px;
-	background-color: #f9f9f9;
-}
-.kura_tm_pricing .kura_tm_main_title{
-	margin-top: 58px;
-}
-.kura_tm_pricing .pricing_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: flex;
-}
-.kura_tm_pricing .left{
-	width: 50%;
-	padding-right: 100px;
-}
-.kura_tm_pricing .left .text{
-	width: 100%;
-	float: left;
-	padding-top: 40px;
-}
-.kura_tm_pricing .right{
-	width: 50%;
-	padding-left: 100px;
-}
-.kura_tm_pricing .right ul{
-	margin: 0px;
-	list-style-type: none;
-	margin-top: 58px;
-}
-.kura_tm_pricing .right ul li{
-	margin: 0px;
-	width: 100%;
-	float: left;
-	margin-bottom: 30px;
-}
-.kura_tm_pricing .right ul li:last-child{
-	margin-bottom: 0px;
-}
-.kura_tm_pricing .right ul li .list_inner{
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 30px 30px 60px;
-	position: relative;
-	background-color: #fff;
-	box-shadow: 0px 0px 20px rgba(0,0,0,.08);
-	border-radius: 10px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.kura_tm_pricing .right ul li .list_inner:hover{
-	background-color: #ff4522;
-}
-.kura_tm_pricing .right ul li span{
-	font-size: 18px;
-	color: #000;
-	font-family: "Founders Grotesk";
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.kura_tm_pricing .right ul li .list_inner:hover span{
-	color: #fff;
-}
-.kura_tm_pricing .right .title{
-	padding-right: 30px;
-}
-.kura_tm_pricing .right .svg{
-	position: absolute;
-	left: 30px;
-	width: 18px;
-	height: 18px;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #ff4522;
-	margin-top: -1px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.kura_tm_pricing .right ul li .list_inner:hover .svg{
-	color: #fff;
+	color: #13241f;
 }
 
 /*---------------------------------------------------*/
@@ -1665,7 +1501,7 @@ body.opened .kura_tm_hero .down{
 	height: 50px;
 	z-index: 2;
 	transform: rotate(-50deg);
-	color: #000;
+	color: #13241f;
 	opacity: 0;
 	visibility: hidden;
 	
@@ -1745,7 +1581,7 @@ body.opened .kura_tm_hero .down{
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #f9f9f9;
+	background-color: #fffdf5;
 	padding: 140px 0px 119px 0px;
 }
 .kura_tm_contact .contact_inner{
@@ -1798,7 +1634,7 @@ body.opened .kura_tm_hero .down{
 }
 .kura_tm_contact .short ul li .list_inner span{
 	font-size: 18px;
-    color: #000;
+    color: #13241f;
     font-family: "Founders Grotesk";
 }
 .kura_tm_contact .right{
@@ -1899,7 +1735,7 @@ body.opened .kura_tm_hero .down{
 	        transition: all .3s ease;
 }
 .kura_tm_button a:hover{
-	color: #fff;background-color: #000;
+	color: #fff;background-color: #13241f;
 }
 .kura_tm_button a:hover .svg{
 	transform: rotate(-50deg);
@@ -1914,7 +1750,7 @@ body.opened .kura_tm_hero .down{
 	height: auto;
 	clear: both;
 	float: left;
-	background-color: #000;
+	background-color: #42504c;
 	padding: 28px 0px 32px 0px;
 	text-align: center;
 }
@@ -1928,7 +1764,7 @@ body.opened .kura_tm_hero .down{
 	justify-content: space-between;
 }
 .kura_tm_copyright .text p{
-	color: #fff;
+	color: #fffdf5;
 }
 .kura_tm_copyright .social ul{
 	margin: 0px;
@@ -1943,7 +1779,7 @@ body.opened .kura_tm_hero .down{
 }
 .kura_tm_copyright .social ul li a{
 	text-decoration: none;
-	color: #fff;
+	color: #fffdf5;
 }
 
 /*---------------------------------------------------*/
@@ -2034,7 +1870,7 @@ body.opened .kura_tm_hero .down{
 	position: absolute;
 	top: 0px;
 	right: 100%;
-	background-color: #000;
+	background-color: #13241f;
 	padding: 12px 12px 4px 12px;
 }
 .kura_tm_settings .icon .svg{
@@ -2148,11 +1984,11 @@ body.dark .kura_tm_settings .icon,
 }
 body.dark .kura_tm_settings .icon .svg,
 .kura_tm_settings.changed .icon .svg{
-	color: #000;
+	color: #13241f;
 }
 body.dark .kura_tm_settings .title,
 .kura_tm_settings.changed .title{
-	color: #000;
+	color: #13241f;
 }
 body.dark .kura_tm_settings .title:before,
 .kura_tm_settings.changed .title:before{
@@ -2160,19 +1996,19 @@ body.dark .kura_tm_settings .title:before,
 }
 body.dark .kura_tm_settings .direction li a,
 .kura_tm_settings.changed .direction li a{
-	color: #000;
+	color: #13241f;
 }
 body.dark .kura_tm_settings .cursor li:nth-child(1) a,
 .kura_tm_settings.changed .cursor li:nth-child(1) a{
-	border-color: #000;
+	border-color: #13241f;
 }
 body.dark .kura_tm_settings .cursor li:nth-child(1) a:before,
 .kura_tm_settings.changed .cursor li:nth-child(1) a:before{
-	background-color: #000;
+	background-color: #13241f;
 }
 body.dark .kura_tm_settings .cursor li .svg,
 .kura_tm_settings.changed .cursor li .svg{
-	color: #000;
+	color: #13241f;
 }
 .kura_tm_settings .cursor{
 	margin: 0px;
@@ -2239,7 +2075,7 @@ body.dark .kura_tm_settings .cursor li .svg,
 }
 .kura_tm_settings .effect li a{
 	text-decoration: none;
-	color: #000;
+	color: #13241f;
 	font-size: 13px;
 	font-weight: 600;
 	font-family: "Founders Grotesk";
