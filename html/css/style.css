@@ -47,6 +47,9 @@ body{
 	word-wrap: break-word;
 	font-weight: 400;
 	background-color: #fffdf5;
+	/* background-image: url(..//img/patterns/noisy.png);
+	background-repeat: repeat;
+	opacity: 1;  */
 	color: #767676;
 }
 svg{
@@ -679,7 +682,6 @@ body.opened .kura_tm_hero .content .left{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	border-radius: 15px;
 }
 .kura_tm_modalbox .popup_informations .title{
 	width: 100%;
@@ -788,7 +790,6 @@ body.opened .kura_tm_hero .content .right{
 	background-size: cover;
 	transform: rotate(0deg);
 	z-index: 2;
-	border-radius: 10px;
 	
 	-webkit-transition: all .4s ease;
 	   -moz-transition: all .4s ease;
@@ -808,7 +809,6 @@ body.opened .kura_tm_hero .content .right .image .main{
 	background-color: #ff4522;
 	transform: rotate(0deg);
 	z-index: 1;
-	border-radius: 10px;
 	
 	-webkit-transition: all .4s ease;
 	   -moz-transition: all .4s ease;
@@ -919,6 +919,18 @@ body.opened .kura_tm_hero .down{
 	float: left;
 	padding: 140px 0px 138px 0px;
 }
+@media screen and (max-width:500px){
+	.kura_tm_portfolio .swiper-slide{
+		width: 315px !important;
+	}
+}
+.kura_tm_portfolio .swiper-slide {	
+	width: 1000px;
+	height: 550px;
+}
+.kura_tm_portfolio .flex-slide {
+	display: flex;
+}
 .kura_tm_portfolio .portfolio_list{
 	width: 100%;
 	height: auto;
@@ -949,16 +961,19 @@ body.opened .kura_tm_hero .down{
 	background-repeat: no-repeat;
 	background-position:center;
 	background-size: cover;
-	border-radius: 10px;
+	height: 550px;
 }
 .kura_tm_portfolio .portfolio_list .overlay{
 	position: absolute;
+	max-height: auto;
 	top: 10px;
 	bottom: 10px;
 	left: 10px;
 	right: 10px;
-	background-color: #fff;
-	border-radius: 10px;
+	background-color: #fffdf5;
+	background-image: url(..//img/patterns/noisy.png);
+	background-repeat: repeat;
+	opacity: 1; 
 	z-index: 1;
 	opacity: 0;
 	visibility: hidden;
@@ -992,12 +1007,18 @@ body.opened .kura_tm_hero .down{
 	visibility: visible;
 }
 .kura_tm_portfolio .portfolio_list .details h3{
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 1.8rem;
+	font-weight: 300;
 	margin-bottom: 4px;
 }
 .kura_tm_portfolio .portfolio_list .details span{
 	font-family: "Founders Grotesk";
+}
+.kura_tm_portfolio .portfolio_list .list_inner {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
 }
 .kura_tm_portfolio .portfolio_list .list_inner .svg{
 	position: absolute;
@@ -1032,15 +1053,13 @@ body.opened .kura_tm_hero .down{
 .kura_tm_swiper_progress{
 	position: absolute;
 	display: flex;
-	top: -0.5rem;
+	top: -1rem;
 	z-index: 999;
 	width: 100%;
-	box-sizing: border-box;
-	flex: 0 1 auto;
-	flex-wrap: wrap;
+	max-height: 4.5rem;
 }
 .kura_tm_swiper_progress .my_pagination_in{
-	font-size: 3.75rem;
+	font-size: 3.55rem;
 	color: #839691;
 }
 .kura_tm_swiper_progress span{
@@ -1053,7 +1072,6 @@ body.opened .kura_tm_hero .down{
 	position: relative;
 	display: inline-block;
 	width: auto;
-	margin-top: -50%;
 }
 .kura_tm_swiper_progress a{
 	color: #ff4522;
@@ -1071,6 +1089,9 @@ body.opened .kura_tm_hero .down{
 	visibility: hidden;
 	position: absolute;
 	z-index: -11;
+}
+.kura_tm_modalbox .box_inner {
+	background-color: #fffdf5;
 }
 .kura_tm_modalbox .popup_details{
 	width: 100%;
